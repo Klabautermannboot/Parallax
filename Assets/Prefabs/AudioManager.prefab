@@ -1,0 +1,189 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2728182388619288538
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2728182388619288532}
+  - component: {fileID: 2728182388619288533}
+  - component: {fileID: 2728182389521776240}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2728182388619288532
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2728182388619288538}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.7511106, y: 0.9694167, z: 7.1995425}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2728182388619288533
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2728182388619288538}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6ddc2991740e9f79ba0567d91385de5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: Theme
+    clip: {fileID: 8300000, guid: b823a578f23a7ef3b894bcfe318fc9b5, type: 3}
+    volume: 0.25
+    pitch: 1
+    priority: 256
+    loop: 1
+    source: {fileID: 0}
+    output: {fileID: -8396668308153049325, guid: aa8f5ea6c553303bfbecb3425836a2c6, type: 2}
+  - name: Punch
+    clip: {fileID: 8300000, guid: 9c5f0d05ae7434a8487d570a2943b1b5, type: 3}
+    volume: 0.65
+    pitch: 1
+    priority: 79
+    loop: 0
+    source: {fileID: 0}
+    output: {fileID: -4269403409538119463, guid: aa8f5ea6c553303bfbecb3425836a2c6, type: 2}
+  - name: PlantHit
+    clip: {fileID: 8300000, guid: b36fd305872b4986398efffc80ca1081, type: 3}
+    volume: 0.3
+    pitch: 1
+    priority: 202
+    loop: 0
+    source: {fileID: 0}
+    output: {fileID: 3151168800221953811, guid: aa8f5ea6c553303bfbecb3425836a2c6, type: 2}
+  - name: Jump
+    clip: {fileID: 8300000, guid: d701b0edeb300c4a88368108278f686e, type: 3}
+    volume: 0.11
+    pitch: 1
+    priority: 235
+    loop: 0
+    source: {fileID: 0}
+    output: {fileID: 3151168800221953811, guid: aa8f5ea6c553303bfbecb3425836a2c6, type: 2}
+  - name: Boost
+    clip: {fileID: 8300000, guid: e94f1dd8e3e923b63abe1036e4ca45ae, type: 3}
+    volume: 0.3
+    pitch: 1
+    priority: 232
+    loop: 0
+    source: {fileID: 0}
+    output: {fileID: 3151168800221953811, guid: aa8f5ea6c553303bfbecb3425836a2c6, type: 2}
+  - name: Shoot
+    clip: {fileID: 8300000, guid: 52a2b017859d02e768502d231265961d, type: 3}
+    volume: 0.3
+    pitch: 1
+    priority: 75
+    loop: 0
+    source: {fileID: 0}
+    output: {fileID: 3151168800221953811, guid: aa8f5ea6c553303bfbecb3425836a2c6, type: 2}
+  - name: IsHit
+    clip: {fileID: 8300000, guid: f5a959903f3a5c357a8045d02915ec55, type: 3}
+    volume: 0.4
+    pitch: 1
+    priority: 0
+    loop: 0
+    source: {fileID: 0}
+    output: {fileID: 3151168800221953811, guid: aa8f5ea6c553303bfbecb3425836a2c6, type: 2}
+  - name: Dead
+    clip: {fileID: 8300000, guid: 44fcb570c47e1df2e94e5584a91c371d, type: 3}
+    volume: 0.26
+    pitch: 0.75
+    priority: 211
+    loop: 0
+    source: {fileID: 0}
+    output: {fileID: 3151168800221953811, guid: aa8f5ea6c553303bfbecb3425836a2c6, type: 2}
+  - name: Kill
+    clip: {fileID: 8300000, guid: f8893f76d6faef4a6aee4bca8e1a75e8, type: 3}
+    volume: 0.4
+    pitch: 0.9
+    priority: 230
+    loop: 0
+    source: {fileID: 0}
+    output: {fileID: 3151168800221953811, guid: aa8f5ea6c553303bfbecb3425836a2c6, type: 2}
+  - name: Victory
+    clip: {fileID: 8300000, guid: d476b95745b2f4425a2378f2c1e8cec1, type: 3}
+    volume: 0.443
+    pitch: 1
+    priority: 0
+    loop: 0
+    source: {fileID: 0}
+    output: {fileID: 3151168800221953811, guid: aa8f5ea6c553303bfbecb3425836a2c6, type: 2}
+  - name: AngryShroom
+    clip: {fileID: 8300000, guid: ca0c83ec121753f98ad23cc36ce4089c, type: 3}
+    volume: 0.42
+    pitch: 1
+    priority: 30
+    loop: 0
+    source: {fileID: 0}
+    output: {fileID: 3151168800221953811, guid: aa8f5ea6c553303bfbecb3425836a2c6, type: 2}
+  - name: Punch2
+    clip: {fileID: 8300000, guid: edb39886f2f74210d989c0843a03bef4, type: 3}
+    volume: 0.5
+    pitch: 1
+    priority: 79
+    loop: 0
+    source: {fileID: 0}
+    output: {fileID: -4269403409538119463, guid: aa8f5ea6c553303bfbecb3425836a2c6, type: 2}
+  - name: Punch1
+    clip: {fileID: 8300000, guid: 2b56d4056f23dbc7b917bef985c4b390, type: 3}
+    volume: 0.5
+    pitch: 1
+    priority: 256
+    loop: 0
+    source: {fileID: 0}
+    output: {fileID: -4269403409538119463, guid: aa8f5ea6c553303bfbecb3425836a2c6, type: 2}
+  - name: Punch3
+    clip: {fileID: 8300000, guid: 7e17aa006b5fb1b3891779f6898b2fb6, type: 3}
+    volume: 0.5
+    pitch: 1
+    priority: 79
+    loop: 0
+    source: {fileID: 0}
+    output: {fileID: -4269403409538119463, guid: aa8f5ea6c553303bfbecb3425836a2c6, type: 2}
+  - name: Pressure
+    clip: {fileID: 8300000, guid: 8c22ef6491c1cf09d847f2e21548ff57, type: 3}
+    volume: 0.5
+    pitch: 1
+    priority: 79
+    loop: 0
+    source: {fileID: 0}
+    output: {fileID: -4269403409538119463, guid: aa8f5ea6c553303bfbecb3425836a2c6, type: 2}
+  - name: Easy
+    clip: {fileID: 8300000, guid: 62ecaf91ce283cacc97f3d127264ab98, type: 3}
+    volume: 0.5
+    pitch: 1
+    priority: 79
+    loop: 0
+    source: {fileID: 0}
+    output: {fileID: -4269403409538119463, guid: aa8f5ea6c553303bfbecb3425836a2c6, type: 2}
+--- !u!114 &2728182389521776240
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2728182388619288538}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43e0b69dbde8da73c973d49e04c69482, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  main: {fileID: 24100000, guid: aa8f5ea6c553303bfbecb3425836a2c6, type: 2}
+  toggle: {fileID: 0}
